@@ -6,11 +6,11 @@ document.querySelectorAll(".small-heading").forEach((header) => {
 
     if (content.style.display === "block") {
       content.style.display = "none";
-      icon.src = "/assets/images/icon-plus.svg"; // Change to closed icon
+      icon.src = "./assets/images/icon-plus.svg"; // Change to closed icon
       this.classList.remove("open");
     } else {
       content.style.display = "block";
-      icon.src = "/assets/images/icon-minus.svg"; // Change to open icon
+      icon.src = "./assets/images/icon-minus.svg"; // Change to open icon
       this.classList.add("open");
     }
   });
