@@ -6,11 +6,11 @@ document.querySelectorAll(".small-heading").forEach((header) => {
 
     if (content.style.display === "block") {
       content.style.display = "none";
-      icon.src = "./assets/images/icon-plus.svg"; // Change to closed icon
+      icon.src = "./assets/images/icon-plus.svg";
       this.classList.remove("open");
     } else {
       content.style.display = "block";
-      icon.src = "./assets/images/icon-minus.svg"; // Change to open icon
+      icon.src = "./assets/images/icon-minus.svg";
       this.classList.add("open");
     }
   });
@@ -22,6 +22,5 @@ document.querySelectorAll(".faq-section").forEach((section) => {
 
   header.addEventListener("click", () => {
     section.classList.toggle("active");
-    // Toggle the icon
   });
 });
